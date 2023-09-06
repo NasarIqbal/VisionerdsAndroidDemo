@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Visionerds Demo</string>
+    <string name="first_name">Nasar</string>
+    <string name="last_name">Iqbal</string>
+    <string name="bene_type">Spouse</string>
+    <string name="primary">Primary</string>
+    <string name="contingent">Contingent</string>
+    <string name="designation"><![CDATA[Android&iOS Developer]]></string>
+    <string name="no_data_found">No data found</string>
+    <string name="ssn">SSN Number</string>
+    <string name="date_of_birth">06/30/1994</string>
+    <string name="phone_number">Phone Number</string>
 </resources>

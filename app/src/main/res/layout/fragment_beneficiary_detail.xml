@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragment.beneficiaryDetail.BeneficiaryDetailFragment">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.nasar.visionerdsdemo.model.Beneficiary" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{`Name: ` + data.firstName + ` ` + data.lastName}"
+            tools:text="@string/first_name"
+            android:layout_margin="@dimen/_5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{`BeneType: ` + data.beneType}"
+            tools:text="@string/bene_type"
+            android:layout_margin="@dimen/_5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            setDesignation="@{data.designationCode}"
+            tools:text="@string/designation"
+            android:layout_margin="@dimen/_5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{`SSN: ` + data.socialSecurityNumber}"
+            tools:text="@string/ssn"
+            android:layout_margin="@dimen/_5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{`DateOfBirth: ` + data.dateOfBirth}"
+            tools:text="@string/date_of_birth"
+            android:layout_margin="@dimen/_5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{`PhoneNumber: ` + data.phoneNumber}"
+            tools:text="@string/phone_number"
+            android:layout_margin="@dimen/_5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            setAddress="@{data.beneficiaryAddress}"
+            tools:text="@string/first_name"
+            android:layout_margin="@dimen/_5dp"
+            />
+
+    </LinearLayout>
+
+</layout>
